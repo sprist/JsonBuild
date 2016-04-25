@@ -5,8 +5,10 @@ Download
 --------
  
  Download  grab via Maven:
+ ```xml
+ http://192.168.0.117:8081/nexus/content/groups/public/
+ ```
 ```xml
-http://192.168.0.117:8081/nexus/content/groups/public/
 <dependency>
   <groupId>com.yaming.json</groupId>
   <artifactId>jsonBuilder</artifactId>
