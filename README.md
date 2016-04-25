@@ -4,7 +4,7 @@
 Download
 --------
 
-Download [the latest JAR][2] or grab via Maven:
+Download grab via Maven:
 ```xml
 <dependency>
   <groupId>com.yaming.json</groupId>
