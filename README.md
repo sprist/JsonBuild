@@ -6,7 +6,12 @@ Download
  
  Download  grab via Maven:
  ```xml
- http://192.168.0.117:8081/nexus/content/groups/public/
+ allprojects {
+    repositories {
+        maven { url "http://192.168.0.117:8081/nexus/content/groups/public/" }
+    }
+}
+
  ```
 ```xml
 <dependency>
