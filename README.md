@@ -3,16 +3,8 @@
 
 Download
 --------
- 
- Download  grab via Maven:
- ```xml
- allprojects {
-    repositories {
-        maven { url "http://192.168.0.117:8081/nexus/content/groups/public/" }
-    }
-}
 
- ```
+Download [the latest JAR][2] or grab via Maven:
 ```xml
 <dependency>
   <groupId>com.yaming.json</groupId>
@@ -24,6 +16,29 @@ or Gradle:
 ```groovy
 compile 'com.yaming.json:jsonBuilder:1.0.2'
 ```
+
+For the SNAPSHOT version:
+```xml
+<dependency>
+  <groupId>com.yaming.json</groupId>
+  <artifactId>jsonBuilder</artifactId>
+  <version>1.0.2</version>
+</dependency>
+```
+or Gradle:
+```groovy
+allprojects {
+  repositories {
+          maven { url "http://192.168.0.117:8081/nexus/content/groups/public/" }
+  }
+}
+```
+```groovy
+dependencies {
+  compile 'com.yaming.json:jsonBuilder:1.0.2'
+}
+```
+ 
 
 开启调试log(默认不打印)
 --------
