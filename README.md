@@ -2,10 +2,17 @@
 轻量级http解析
 
 开启调试log(默认不打印)
+--------
+
 JsonInject.setDebug(debug)
 
 使用
+--------
+
 1.从前
+--------
+
+```java
 public class ListItemRegisterDepartModel {
     public String dept_code;
     public String dept_name;
@@ -17,8 +24,12 @@ public class ListItemRegisterDepartModel {
         this.i = obj.optInt("i");
     }
 }
+```
 
 2.现在
+--------
+
+```java
 public class ListItemRegisterDepartModel {
     @JsonBuilder public String dept_code;//默认使用成员变量名
     @JsonBuilder("dept_name") public String dept_name;
@@ -28,8 +39,12 @@ public class ListItemRegisterDepartModel {
         JsonInject.inject(this, obj);
     }
 }
+```
 
 3.自动生成部分
+--------
+
+```java
 public class ListItemRegisterDepartModel$$JsonBuilder {
   public static void inject(Finder finder, final com.ucmed.qingdao.model.ListItemRegisterDepartModel target, JSONObject source) {
     Object object;
@@ -47,6 +62,17 @@ public class ListItemRegisterDepartModel$$JsonBuilder {
     }
   }
 }
+```
+
+4.混淆
+-----------
+
+```xml
+-libraryjars libs/jsonBuilder-1.0.0.jar
+-dontwarn com.yaming.json.internal.**
+-keep class **$$JsonBuilder { *; }
+-keepnames class * { @com.yaming.json.JsonBuilder *;}
+```
 
 
 
