@@ -4,7 +4,9 @@
 开启调试log(默认不打印)
 --------
 
+```java
 JsonInject.setDebug(debug)
+```
 
 使用
 --------
