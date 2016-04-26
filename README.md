@@ -7,20 +7,20 @@ Download
 Download grab via Maven:
 ```xml
 <dependency>
-  <groupId>com.yaming.json</groupId>
+  <groupId>com.apcan.sprist</groupId>
   <artifactId>jsonBuilder</artifactId>
   <version>1.0.2</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.yaming.json:jsonBuilder:1.0.2'
+compile 'com.apcan.sprist:jsonBuilder:1.0.2'
 ```
 
 For the SNAPSHOT version:
 ```xml
 <dependency>
-  <groupId>com.yaming.json</groupId>
+  <groupId>com.apcan.sprist</groupId>
   <artifactId>jsonBuilder</artifactId>
   <version>1.0.2</version>
 </dependency>
@@ -29,13 +29,13 @@ or Gradle:
 ```groovy
 allprojects {
   repositories {
-          maven { url "http://192.168.0.117:8081/nexus/content/groups/public/" }
+           maven { url "http://www.apcan.cn:8081/nexus/content/groups/AndroidSnapshot/" }
   }
 }
 ```
 ```groovy
 dependencies {
-  compile 'com.yaming.json:jsonBuilder:1.0.2'
+  compile 'com.apcan.sprist:jsonBuilder:1.0.2'
 }
 ```
  
