@@ -109,7 +109,6 @@ public class ListItemRegisterDepartModel$$JsonBuilder {
 -----------
 
 ```xml
--libraryjars libs/jsonBuilder-1.0.0.jar
 -dontwarn com.yaming.json.internal.**
 -keep class **$$JsonBuilder { *; }
 -keepnames class * { @com.yaming.json.JsonBuilder *;}
